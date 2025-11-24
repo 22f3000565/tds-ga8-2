@@ -1,0 +1,17 @@
+/* Custom Marp Theme */
+@charset "UTF-8";
+
+@import "https://unpkg.com/marp-core/dist/marp.css";
+
+section {
+  font-family: "Segoe UI", Arial, sans-serif;
+  padding: 50px;
+}
+
+h1 {
+  color: #1a73e8;
+}
+
+footer {
+  color: #555;
+}
