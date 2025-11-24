@@ -1,75 +1,91 @@
 ---
 marp: true
+title: Product Documentation Presentation
 theme: custom-theme
 paginate: true
-paginate-position: bottom-right
-class: lead
-title: Product Documentation Presentation
+footer: "© 2025 | Author: 22f3000565@ds.study.iitm.ac.in"
 ---
 
-# Product Documentation  
-### Using Marp
-
-**Technical Writer:**  
-22f3000565@ds.study.iitm.ac.in
-
----
-
-<!-- Custom styling on this slide -->
-<!-- This slide shows directives + styled content -->
-<style scoped>
-h1 {
-  color: #007acc;
+<!-- Custom Theme -->
+<style>
+section {
+  font-family: "Arial", sans-serif;
+  padding: 40px;
 }
-p {
-  font-size: 1.1rem;
+
+h1, h2, h3 {
+  color: #1a73e8;
+}
+
+footer {
+  font-size: 12px;
+  color: #444;
+}
+
+.custom-box {
+  background: #e3f2fd;
+  padding: 20px;
+  border-radius: 10px;
+  border-left: 6px solid #1a73e8;
 }
 </style>
 
-# Documentation Goals
-- Maintainable in version control  
-- Easily exported as **PDF**, **HTML**, **PPTX**  
-- Uses custom Marp theme  
-- Demonstrates modern documentation patterns
+# Product Documentation  
+## using **Marp**
+
+Email: **22f3000565@ds.study.iitm.ac.in**
 
 ---
 
-# Algorithmic Complexity  
-We analyze the complexity using:
+# Overview
+
+- Version-controlled documentation  
+- Easy multi-format export (PDF, PPTX, HTML)  
+- Custom themes + directives  
+- Math support  
+- Background images
+
+---
+
+<!-- background image slide -->
+<!-- Use any public image URL -->
+![bg](https://images.unsplash.com/photo-1526378722484-cc5c9c81c1a8?auto=format&fit=crop&w=1350&q=80)
+
+# Background Slide  
+This slide uses a **background image** via Marp's `![bg]()` syntax.
+
+---
+
+# Custom Styled Slide
+
+<div class="custom-box">
+This is a custom component styled using  
+**custom CSS inside Marp**.  
+</div>
+
+---
+
+# Algorithm Complexity
+
+Mathematical equations are supported using LaTeX:
 
 $$
 T(n) = O(n \log n)
 $$
 
-More examples:
+Another example:
 
-- Searching: \(O(\log n)\)  
-- Sorting: \(O(n \log n)\)  
-- Brute force: \(O(2^n)\)
-
----
-
-<!-- Slide with background image -->
-<!-- Replace the URL with your image if needed -->
-![bg](https://images.unsplash.com/photo-1526378722484-cc2c8829f90e?w=1200)
-
-# Architecture Overview
-This slide uses a **background image** to visually explain system components.
+$$
+f(x) = \frac{1}{1 + e^{-x}}
+$$
 
 ---
 
 # Code Example
 
 ```python
-def compute_complexity(n):
-    # Example O(n log n) function
-    total = 0
-    for i in range(n):
-        j = 1
-        while j < n:
-            total += 1
-            j *= 2
-    return total
+def compute_growth(prev, curr):
+    return ((curr - prev) / prev) * 100
 ```
 
 ---
